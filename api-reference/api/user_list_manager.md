@@ -1,14 +1,21 @@
 # List manager
 
 Get user's manager. Returns the user or contact assigned as the user's manager.
+
 ### Prerequisites
+
 One of the following **scopes** is required to execute this API:
-*User.Read.All; User.ReadWrite.All; Directory.Read.All; Directory.ReadWrite.All; Directory.AccessAsUser.All*
+
+* User.Read.All
+* User.ReadWrite.All
+* Directory.Read.All
+* Directory.ReadWrite.All
+* Directory.AccessAsUser.All
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<id | userPrincipalName>/manager
+GET /users/<id|userPrincipalName>/manager
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -30,7 +37,7 @@ Here is an example of the request.
   "name": "get_manager"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/users/<id | userPrincipalName>/manager
+GET https://graph.microsoft.com/v1.0/users/<id|userPrincipalName>/manager
 ```
 ##### Response
 Here is an example of the response.
