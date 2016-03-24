@@ -39,7 +39,7 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [ "link", "grantedTo", "invitation", "inheritedFrom" ],
+  "optionalProperties": [ "link", "grantedTo", "invitation", "inheritedFrom", "shareId" ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.permission"
 }-->

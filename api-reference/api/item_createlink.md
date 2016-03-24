@@ -91,7 +91,7 @@ Content-type: application/json
 
 ##### Response
 
-<!-- { "blockType": "response", "@odata.type": "oneDrive.permission" } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -136,7 +136,7 @@ Content-Type: application/json
 The response will be `201 Created` if a new sharing link is created for the
 item or `200 OK` if an existing link is returned.
 
-<!-- { "blockType": "response", "@odata.type": "oneDrive.permission" } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
