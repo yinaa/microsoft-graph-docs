@@ -34,9 +34,7 @@ Do not supply a request body for this method.
 Here is an example of how to call this API.
 
 
-<!--
-"blockType": "request", "name": "driveitem-download-contents"
--->
+<!-- { "blockType": "request", "name": "driveitem-download-contents" } -->
 ```http
 GET /me/drive/items/{item-id}/content
 ```
@@ -100,4 +98,4 @@ require the Authorization header.
   "keywords": "",
   "section": "documentation",
   "tocPath": "OneDrive/Item/Download file"
-  -->
+}-->

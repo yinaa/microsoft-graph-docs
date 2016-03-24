@@ -1,7 +1,6 @@
 # List thumbnails for driveItem
 
-Retrieve a set of thumbnailSet resources for a [driveItem
-object](../resource/driveitem.md).
+Retrieve a set of thumbnailSet resources for a [driveItem object](../resources/driveitem.md).
 
 An item in a drive can be represented by zero or more
 [thumbnailSet](../resources/thumbnailset.md) objects. Each **thumbnailSet** can

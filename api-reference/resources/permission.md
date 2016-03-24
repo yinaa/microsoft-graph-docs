@@ -23,7 +23,7 @@ Provides information about permissions granted for an item.
 | inheritedFrom | [itemReference](itemreference.md)         | Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only.                       |
 | link          | [sharingLink](sharinglink.md)             | Provides the link details of the current permission, if it is a link type permissions. Read-only.                                     |
 | role          | Array of strings                          | The type of permission, e.g. `read`. See below for the full list of roles. Read-only.                                                 |
-| shareId       | String                                    | A unique token for this permission that can be used with the [shares resource](../api/drive_shares.md) to access the item. Read-only. |
+| shareId       | String                                    | A unique token for this permission. Read-only. |
 
 
 ### Roles enumeration
