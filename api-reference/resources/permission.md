@@ -1,6 +1,10 @@
 # permission resource type
 
-Provides information about permissions granted for an item.
+Provides information about a permission granted for a [driveItem](driveitem.md).
+
+Permissions have a number of different forms. The **permission**
+resource represents these different forms through properties on the
+**permission** resource.
 
 ### Methods
 
@@ -43,18 +47,16 @@ Here is a JSON representation of the resource
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.permission"
 }-->
-
 ```json
 {
-  "grantedTo": {"@odata.type": "microsoft.graph.identitySet"},
   "id": "string (identifier)",
+  "grantedTo": {"@odata.type": "microsoft.graph.identitySet"},
   "inheritedFrom": {"@odata.type": "microsoft.graph.itemReference"},
   "invitation": {"@odata.type": "microsoft.graph.sharingInvitation"},
   "link": {"@odata.type": "microsoft.graph.sharingLink"},
   "roles": ["string"],
   "shareId": "string"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
