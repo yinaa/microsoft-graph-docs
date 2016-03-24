@@ -34,9 +34,9 @@ Content-type: application/json
 {
    "changeType": "created,updated",
    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
-   "resource": "me/mailFolders('Inbox')/messages"
-   "expirationDateTime":"2016-11-20T18:23:45.9356913Z"
-   "clientState": "subscription-identifier",  
+   "resource": "me/mailFolders('Inbox')/messages",
+   "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
+   "clientState": "subscription-identifier"
 }
 ```
 In the request body, supply a JSON representation of the [subscription](../resources/subscription.md) object.
@@ -61,11 +61,8 @@ Here is an example of the response. Note: The response object shown here may be 
 } -->
 ```http
 HTTP/1.1 201 Created
-Content-type: application/json
-Content-length: 252
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#subscriptions/$entity",
   "id":"7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
   "resource":"me/mailFolders('Inbox')/messages",
   "changeType":"created, updated",
