@@ -136,13 +136,11 @@ Content-length: 3179
   },
   "location": {
     "altitude": 99,
-    "latitude": 99,
-    "longitude": 99
+    "latitude": 99.00,
+    "longitude": 99.00
   },
   "photo": {
-    "height": 99,
-    "width": 99,
-    "id": "id-value"
+    "takenDateTime": "datetime-value"
   },
   "searchResult": {
     "onClickTelemetryUrl": "onClickTelemetryUrl-value"
