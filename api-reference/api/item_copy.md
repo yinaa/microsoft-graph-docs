@@ -1,6 +1,6 @@
 # Copy a driveItem to a new location
 
-Creates a copy of a [driveItem][../resources/driveitem.md] (including any
+Creates a copy of a [driveItem](../resources/driveitem.md) (including any
 children), under a new parent or with a new name.
 
 ### Prerequisites

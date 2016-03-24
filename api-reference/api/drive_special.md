@@ -61,9 +61,8 @@ GET https://graph.microsoft.com/v1.0/me/drive/special/<name>
 Here is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.driveItem",
-  "isCollection": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.driveItem"
 } -->
 ```http
 HTTP/1.1 200 OK

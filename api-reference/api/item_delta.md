@@ -181,7 +181,7 @@ There may be cases when the service can't provide a list of changes for a given
 token (for example, if a client tries to reuse an old token after being
 disconnected for a long time, or if server state has changed and a new token is
 required). In these cases the service will return an `HTTP 410 Gone` error with
-an [error response][error-response] containing one of the error codes below,
+an error response containing one of the error codes below,
 and a `Location` header containing a new nextLink that starts a fresh delta
 enumeration from scratch. After finishing the full enumeration, compare the
 returned items with your local state and follow these instructions.
