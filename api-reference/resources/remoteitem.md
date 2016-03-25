@@ -26,7 +26,7 @@ item might have its `id` changed.
 
 ## JSON representation
 
-<!-- { "blockType": "resource", "@odata.type": "oneDrive.remoteItem", optionalProperties: ["name", "fileSystemInfo", "file", "folder"] } -->
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.remoteItem", optionalProperties: ["name", "fileSystemInfo", "file", "folder"] } -->
 ```json
 {
   "id": "string",

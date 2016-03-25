@@ -36,7 +36,7 @@ This returns a collection of [driveItem resources](../resources/driveitem.md)
 that contains items which have been shared with the signed-in user.
 
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveitem", "isCollection": true } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "isCollection": true, "truncated": true } -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
