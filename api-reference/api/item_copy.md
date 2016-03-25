@@ -72,5 +72,5 @@ copy action has completed.
   "description": "Create a copy of an existing item.",
   "keywords": "copy existing item",
   "section": "documentation",
-  "tocPath": "Items/Copy"
+  "tocPath": "OneDrive/Item/Copy"
 } -->
