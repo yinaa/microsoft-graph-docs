@@ -39,7 +39,7 @@ In the request body, supply the values for relevant fields that should be update
 |businessHomePage|String|The business home page of the contact.|
 |businessPhones|String|The contact's business phone numbers.|
 |categories|String|The categories associated with the contact.|
-|children|String||
+|children|String|The names of the contact's children.|
 |companyName|String|The name of the contact's company.|
 |department|String|The contact's department.|
 |displayName|String|The contact's display name.|
