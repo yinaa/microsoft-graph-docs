@@ -31,6 +31,7 @@ A mailFolder in a user's mailbox, such as Inbox, Drafts, and Sent Items. MailFol
 |parentFolderId|String|The unique identifier for the mailFolder's parent mailFolder.|
 |totalItemCount|Int32|The number of items in the mailFolder.|
 |unreadItemCount|Int32|The number of items in the mailFolder marked as unread.|
+|WellKnownName|String|The mailFolder's well-known name like Inbox, Drafts, SentItems, DeletedItems.| 
 
 **Access item counts efficiently**
 
