@@ -18,7 +18,7 @@ Directory settings can be created based on the available [directorySettingTempla
 |:---------------|:--------|:----------|
 |displayName|string|Display name of this group of settings, which comes from the associated template. Read-only.|
 |id|string| Unique identifier for these settings. Read-only.|
-|templateId|string| Unique identifier for the template used to create this group of settings. Read-only.|
+|templateSettingId|string| Unique identifier for the template used to create this group of settings. Read-only.|
 |values|[settingValue](settingvalue.md) collection| Collection of name value pairs. Must contain and set all the settings defined in the template.|
 
 ### Relationships
@@ -41,7 +41,7 @@ Here is a JSON representation of the resource.
 {
   "displayName": "string",
   "id": "string (identifier)",
-  "templateId": "string",
+  "templateSettingId": "string",
   "values": [{"@odata.type": "microsoft.graph.settingValue"}]
 }
 

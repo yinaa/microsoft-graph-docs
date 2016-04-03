@@ -46,7 +46,7 @@ Content-length: 343
 {
   "value": [
     {
-      "id": "id-value"
+      "id": "id-value",
       "displayName": "displayName-value",
       "description": "description-value",
       "values": [
