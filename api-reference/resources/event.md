@@ -107,6 +107,7 @@ Here is a JSON representation of the resource
 |[Get event](../api/event_get.md) | [event](event.md) |Read properties and relationships of event object.|
 |[Update](../api/event_update.md) | [event](event.md)	|Update event object. |
 |[Delete](../api/event_delete.md) | None |Delete event object. |
+|[cancel](../api/event_cancel.md) | None | Send cancellation message from the organizer to all the attendees and cancel the specified meeting. | 
 |[accept](../api/event_accept.md)|None|Accept the specified event.|
 |[tentativelyAccept](../api/event_tentativelyaccept.md)|None|Tentatively accept the specified event.|
 |[decline](../api/event_decline.md)|None|Decline invitation to the specified event.|
