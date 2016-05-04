@@ -19,10 +19,10 @@ One of the following **scopes** is required to execute this API:
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/messages/<id>/reply
-POST /users/<id | userPrincipalName>/messages/<id>/reply
-POST /me/mailFolders/<id>/messages/<id>/reply
-POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/reply
+POST /me/messages/<id>/microsoft.graph.reply
+POST /users/<id | userPrincipalName>/messages/<id>/microsoft.graph.reply
+POST /me/mailFolders/<id>/messages/<id>/microsoft.graph.reply
+POST /users/<id | userPrincipalName>/mailFolders/<id>/messages/<id>/microsoft.graph.reply
 ```
 ### Request headers
 | Name       | Type | Description|
@@ -50,7 +50,7 @@ Here is an example of the request.
   "name": "message_reply"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAAqldOAAA=/reply
+POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAAqldOAAA=/microsoft.graph.reply
 Content-Type: application/json
 
 {
