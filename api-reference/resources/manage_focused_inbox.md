@@ -10,7 +10,7 @@ considers that message as, respectively, more important and less important. To c
 [update the inferenceClassification property of that message](../api/message_update.md). Over time, these corrections also train the message classification system.
 
 The Focused Inbox REST API also lets you create overrides. Each override, represented by an 
-[inferenceClassificationOverride](../api/inferenceClassificationOverride.md) instance, is an instruction for the 
+[inferenceClassificationOverride](../resources/inferenceClassificationOverride.md) instance, is an instruction for the 
 classification system to always designate messages from a specific sender in a consistent way 
 (i.e., always as "Focused" or always as "Other"), regardless of any previously learned approach. You can [create](../api/inferenceclassification_post_overrides.md), 
 [list](../api/inferenceclassification_list_overrides.md), [update](../api/inferenceclassificationoverride_update.md) and [delete](../api/inferenceclassificationoverride_delete.md) 

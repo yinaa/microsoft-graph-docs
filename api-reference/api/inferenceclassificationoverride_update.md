@@ -2,7 +2,7 @@
 
 Change the **classifyAs** field of an override as specified. 
 
-You cannot use PATCH to change any other fields in an [inferenceClassicationOverride](../resources/inferenceClassicationOverride.md) instance. 
+You cannot use PATCH to change any other fields in an [inferenceClassificationOverride](../resources/inferenceClassificationOverride.md) instance. 
 
 If an override exists for a sender and the sender changes his/her display name, you can use [POST](inferenceclassification_post_overrides.md) to force an update to the name field in the existing override.
 
