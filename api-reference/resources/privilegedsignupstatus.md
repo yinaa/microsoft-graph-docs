@@ -7,9 +7,7 @@ Represents the tenant sign-up status for Privileged Identity Management.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get privilegedSignupStatus](../api/privilegedsignupstatus_get.md) | [privilegedSignupStatus](privilegedsignupstatus.md) |Read properties and relationships of privilegedSignupStatus object.|
-|[Update](../api/privilegedsignupstatus_update.md) | [privilegedSignupStatus](privilegedsignupstatus.md)	|Update privilegedSignupStatus object. |
-|[Delete](../api/privilegedsignupstatus_delete.md) | None |Delete privilegedSignupStatus object. |
+|[List privilegedSignupStatus](../api/privilegedsignupstatus_list.md) | [privilegedSignupStatus](privilegedsignupstatus.md) |Read properties and relationships of privilegedSignupStatus object.|
 |[canSignUp](../api/privilegedsignupstatus_cansignup.md)|boolean|Verify if the requestor is authorized to sign up the tenant to Privileged Identity Management.|
 |[completeSetup](../api/privilegedsignupstatus_completesetup.md)|[roleSuccessStatistics](rolesuccessstatistics.md) collection|Finish Privileged Identity Management sign up process with the tenant administrator specified parameters.|
 |[isSignedUp](../api/privilegedsignupstatus_issignedup.md)|boolean|Check if the tenant is signed up to Privileged Identity Management.|

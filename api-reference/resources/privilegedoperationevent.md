@@ -14,8 +14,8 @@ Represents an audit event that is generated for the role operations, such as an 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |additionalInformation|string|Detailed human readable information for the event.|
-|creationDateTime|[dateTimeOffset](datetimeoffset.md)|Indicates the time when the event is created.|
-|expirationDateTime|[dateTimeOffset](datetimeoffset.md)|This is only used when the requestType is "Elevate", and it indicates the expiration time for the role activation.|
+|creationDateTime|dateTimeOffset|Indicates the time when the event is created.|
+|expirationDateTime|dateTimeOffset|This is only used when the requestType is "Elevate", and it indicates the expiration time for the role activation.|
 |id|string|The unique identifier for privilegedOperationEvent. Read-only.|
 |requestType|string|The request operation type. Example types could be: Assign (role assignment), Elevate (role activation), Unassign (remove role assignment), and Unelevate (role deactivation).|
 |requestorId|string|The user id of the requestor who initiates the operation.|

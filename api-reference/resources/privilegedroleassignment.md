@@ -9,7 +9,7 @@ Represents a privileged role assignment for a particular user.
 |:---------------|:--------|:----------|
 |[List privilegedRoleAssignment collection](../api/privilegedroleassignment_list.md) | [privilegedRoleAssignment](privilegedroleassignment.md) collection|Get the collection of privilegedRoleAssignment objects.|
 |[Get privilegedRoleAssignment](../api/privilegedroleassignment_get.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |Read properties and relationships of privilegedRoleAssignment object.|
-|[Create assignment](../api/privilegedrole_post_assignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)| Create a new assignment by posting to the assignments collection.|
+|[Create assignment](../api/privilegedroleassignment_post_privilegedroleassignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)| Create a new assignment by posting to the assignments collection.|
 |[Delete](../api/privilegedroleassignment_delete.md) | None |Delete privilegedRoleAssignment object. |
 |[makePermanent](../api/privilegedroleassignment_makepermanent.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Make the role assignment as permanent.|
 |[makeTemporary](../api/privilegedroleassignment_maketemporary.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Make the role assignement as temporary.|
@@ -19,7 +19,7 @@ Represents a privileged role assignment for a particular user.
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|expirationDateTime|[dateTimeOffset](datetimeoffset.md)|The UTC DateTime when the temporary privileged role assignment will be expired. For permanent role assignment, the value is null.|
+|expirationDateTime|dateTimeOffset|The UTC DateTime when the temporary privileged role assignment will be expired. For permanent role assignment, the value is null.|
 |id|string| The unique identifier for the privileged role assignment. Read-only. It is in the format of 'userId_roleId'.|
 |isElevated|boolean|**true** if the role assignment is activated. **false** if the role assignment is deactivated.|
 |resultMessage|string|Result message set by the service.|

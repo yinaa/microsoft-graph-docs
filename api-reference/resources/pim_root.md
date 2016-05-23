@@ -26,11 +26,11 @@
 |[Fix privilegedSecurityAlert](../api/privilegedsecurityalert_fix.md) |None| Fix a privilegedSecurityAlert.|
 |[Get privilegedSecurityAlert](../api/privilegedsecurityalert_get.md) | [privilegedSecurityAlert](privilegedsecurityalert.md) object|Get privilegedSecurityAlert object. |
 |[List privilegedSecurityAlert](../api/privilegedsecurityalert_list.md) | [privilegedSecurityAlert](privilegedsecurityalert.md) collection |Get privilegedSecurityAlert object collection. |
-|[Reactive privilegedSecurityAlert](../api/privilegedsecurityalert_reactive.md) |None|Reactive a security alert. |
+|[Reactive privilegedSecurityAlert](../api/privilegedsecurityalert_reactivate.md) |None|Reactive a security alert. |
 |[Refresh all privilegedSecurityAlert](../api/privilegedsecurityalert_refreshall.md) |None|Scan the security issues and refresh the security alerts. |
 |[Update privilegedSecurityAlert settings](../api/privilegedsecurityalert_update.md) |[privilegedSecurityAlert](../resources/privilegedsecurityalert.md) object|Update the settings for privilegedSecurityAlert object.|
 |[canSignUp](../api/privilegedsignupstatus_cansignup.md) |A boolean object in the body.| Check if the requestor is able to sign up the tenant to Privileged Identity Management.|
-|[completeSetup](../api/privilegedsignupstatus_completsetup.md) |[roleSuccessStatistics](../resources/rolesuccessstatistics.md) collection object in the response body| Complete the sign up process for the tenant to be managed by Privileged Identity Management.|
+|[completeSetup](../api/privilegedsignupstatus_completesetup.md) |[roleSuccessStatistics](../resources/rolesuccessstatistics.md) collection object in the response body| Complete the sign up process for the tenant to be managed by Privileged Identity Management.|
 |[isSignedUp](../api/privilegedsignupstatus_issignedup.md) |A boolean object in the body.| Check if the tenant has been signed up to Privileged Identity Management.|
 |[List privilegedSignupStatus](../api/privilegedsignupstatus_list.md) | [privilegedSignupStatus](privilegedsignupstatus.md) collection |Retrieve the privilegedSignupStatus object for the tenant. |
 |[signUp](../api/privilegedsignupstatus_signUp.md) | [privilegedSignupStatus](privilegedsignupstatus.md) |Sign up the tenant to Privileged Identity Management.|

@@ -27,8 +27,8 @@ Represents the security alert object.
 |isActive|boolean|**true** if the security alert is active. **false** if the security alert is not active.|
 |isConfigurable|boolean|**true** if the tenant administrator is able to configure the security alert. **false** if the security alert cannot be configured. |
 |isResolvable|boolean|**true** if the security alert can be resolved running **fix** method. **false** if the security alert cannot be resolved by **fix** method. |
-|lastModifiedDateTime|[dateTimeOffset](datetimeoffset.md)|The last modified time for the security alert.|
-|lastScannedDateTime|[dateTimeOffset](datetimeoffset.md)|The last scanned time for the security alert.|
+|lastModifiedDateTime|dateTimeOffset|The last modified time for the security alert.|
+|lastScannedDateTime|dateTimeOffset|The last scanned time for the security alert.|
 |mitigationSteps|string|Mitigate steps for the security alert.|
 |numberOfAffectedItems|int32|The number of items that are affected by the security alert. The items are stored in **additionalData** property.|
 |securityImpact|string|The help message of the security impact from the security alert.|
