@@ -37,7 +37,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "int32"
+  "@odata.type": 1024
 } -->
 ```http
 HTTP/1.1 200 OK

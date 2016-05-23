@@ -40,6 +40,7 @@ Here is an example of the request.
 PUT https://graph.microsoft.com/beta/privilegedSecurityAlerts/<id>
 Content-type: application/json
 Content-length: 203
+
 {"id":"da5d0491-89e-4f06-893a-81e8171e647d",
 "TimeIntervalBetweenActivationsInMin":"310",
 "SequentialActivationCounterThreshold":"10"}
