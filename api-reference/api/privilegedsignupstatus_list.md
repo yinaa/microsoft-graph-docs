@@ -1,6 +1,6 @@
 # List privilegedSignupStatus
 
-Retrieve the privilegedSignupStatus object for the tenant.
+Retrieve the privilegedSignupStatus object for the organization.
 ### Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
 

@@ -25,7 +25,7 @@ Represents the security alert object.
 |howToPrevent|string|The help message of how to prevent this security alert.|
 |id|string| The unique identifier of the security alert. Read-only.|
 |isActive|boolean|**true** if the security alert is active. **false** if the security alert is not active.|
-|isConfigurable|boolean|**true** if the tenant administrator is able to configure the security alert. **false** if the security alert cannot be configured. |
+|isConfigurable|boolean|**true** if the organization administrator is able to configure the security alert. **false** if the security alert cannot be configured. |
 |isResolvable|boolean|**true** if the security alert can be resolved running **fix** method. **false** if the security alert cannot be resolved by **fix** method. |
 |lastModifiedDateTime|dateTimeOffset|The last modified time for the security alert.|
 |lastScannedDateTime|dateTimeOffset|The last scanned time for the security alert.|
@@ -34,7 +34,7 @@ Represents the security alert object.
 |securityImpact|string|The help message of the security impact from the security alert.|
 |severityLevel|string| Possible values are: `high`, `medium`, `low`.|
 |status|string| Possible values are: `active`, `dismissed`, `inactive`.|
-|wasDismissed|boolean|**true** if the security alert is dismissed by the tenant administrator. **false** if the security alert is not dismissed.|
+|wasDismissed|boolean|**true** if the security alert is dismissed by the organization administrator. **false** if the security alert is not dismissed.|
 
 ### Relationships
 None

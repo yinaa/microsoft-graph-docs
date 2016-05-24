@@ -1,5 +1,5 @@
 # privilegedSignupStatus: isSignedUp
-Check if the tenant has been signed up to Privileged Identity Management.
+Check if the organization has been signed up to Privileged Identity Management.
 
 ### Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_

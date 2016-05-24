@@ -22,7 +22,7 @@ Represents an audit event that is generated for the role operations, such as an 
 |requestorName|string|The user name of the requestor who initiates the operation.|
 |roleId|string|The id of of the role that is associated with the operation.|
 |roleName|string|The name of the role.|
-|tenantId|string|The tenant id.|
+|tenantId|string|The tenant(organization) id.|
 |userId|string|The id of the user that is associated with the operation.|
 |userMail|string|The user's email.|
 |userName|string|The user's display name.|

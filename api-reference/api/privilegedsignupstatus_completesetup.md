@@ -1,6 +1,6 @@
 # privilegedSignupStatus: completeSetup
 
-Complete the sign up process for the tenant to be managed by Privileged Identity Management.
+Complete the sign up process for the organization to be managed by Privileged Identity Management.
 ### Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
 
@@ -20,7 +20,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|tenantSetupInfo|tenantSetupInfo|The tenant setup information that will be used to by the API to do the initial configuration for the tenant.|
+|tenantSetupInfo|tenantSetupInfo|The organization(tenant) setup information that will be used to by the API to do the initial configuration for the organization.|
 
 ### Response
 If successful, this method returns `200, OK` response code and [roleSuccessStatistics](../resources/rolesuccessstatistics.md) collection object in the response body.

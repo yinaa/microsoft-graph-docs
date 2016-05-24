@@ -1,5 +1,5 @@
 # privilegedSignupStatus: signUp
-Sign up the tenant to Privileged Identity Management.
+Sign up the organization to Privileged Identity Management.
 
 ### Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_

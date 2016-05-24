@@ -1,6 +1,6 @@
 # privilegedSignupStatus: canSignUp
 
-Check if the requestor is able to sign up the tenant to Privileged Identity Management.
+Check if the requestor is able to sign up the organization to Privileged Identity Management.
 ### Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_ 
 ### HTTP request

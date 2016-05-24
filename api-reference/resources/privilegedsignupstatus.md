@@ -1,6 +1,6 @@
 # privilegedSignupStatus resource type
 
-Represents the tenant sign-up status for Privileged Identity Management.
+Represents the organization sign-up status for Privileged Identity Management.
 
 
 ### Methods
@@ -8,16 +8,16 @@ Represents the tenant sign-up status for Privileged Identity Management.
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List privilegedSignupStatus](../api/privilegedsignupstatus_list.md) | [privilegedSignupStatus](privilegedsignupstatus.md) |Read properties and relationships of privilegedSignupStatus object.|
-|[canSignUp](../api/privilegedsignupstatus_cansignup.md)|boolean|Verify if the requestor is authorized to sign up the tenant to Privileged Identity Management.|
-|[completeSetup](../api/privilegedsignupstatus_completesetup.md)|[roleSuccessStatistics](rolesuccessstatistics.md) collection|Finish Privileged Identity Management sign up process with the tenant administrator specified parameters.|
-|[isSignedUp](../api/privilegedsignupstatus_issignedup.md)|boolean|Check if the tenant is signed up to Privileged Identity Management.|
-|[signUp](../api/privilegedsignupstatus_signup.md)|[privilegedSignupStatus](privilegedsignupstatus.md)|Start the sign up process to Privileged Identity Management for the tenant.|
+|[canSignUp](../api/privilegedsignupstatus_cansignup.md)|boolean|Verify if the requestor is authorized to sign up the organization to Privileged Identity Management.|
+|[completeSetup](../api/privilegedsignupstatus_completesetup.md)|[roleSuccessStatistics](rolesuccessstatistics.md) collection|Finish Privileged Identity Management sign up process with the organization administrator specified parameters.|
+|[isSignedUp](../api/privilegedsignupstatus_issignedup.md)|boolean|Check if the organization is signed up to Privileged Identity Management.|
+|[signUp](../api/privilegedsignupstatus_signup.md)|[privilegedSignupStatus](privilegedsignupstatus.md)|Start the sign up process to Privileged Identity Management for the organization.|
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|string| Read-only.|
-|isRegistered|boolean|**true** if the tenant has initiated PIM registration. **false** if the tenant has not initiated PIM registration or if the previous registration was failed.|
+|isRegistered|boolean|**true** if the organization has initiated PIM registration. **false** if the organization has not initiated PIM registration or if the previous registration was failed.|
 |status|string| Possible values are: `unknown`, `notRegisteredYet`, `registeredSetupNotStarted`, `registeredSetupInProgress`, `registrationAndSetupCompleted`, `registrationFailed`, `registrationTimedOut`, `disabled`.|
 
 ### Relationships
