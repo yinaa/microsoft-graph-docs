@@ -24,10 +24,7 @@ If successful, this method returns `200, OK` response code and int32 object in t
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "privilegedroleassignment_uniqueadminscount"
-}-->
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/privilegedRoleAssignments/<id>/uniqueAdminsCount
 ```
