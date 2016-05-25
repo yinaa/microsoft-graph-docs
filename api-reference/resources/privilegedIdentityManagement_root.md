@@ -33,7 +33,7 @@
 |[completeSetup](../api/privilegedsignupstatus_completesetup.md) |[roleSuccessStatistics](../resources/rolesuccessstatistics.md) collection object in the response body| Complete the sign up process for the tenant to be managed by Privileged Identity Management.|
 |[isSignedUp](../api/privilegedsignupstatus_issignedup.md) |A boolean object in the body.| Check if the tenant has been signed up to Privileged Identity Management.|
 |[List privilegedSignupStatus](../api/privilegedsignupstatus_list.md) | [privilegedSignupStatus](privilegedsignupstatus.md) collection |Retrieve the privilegedSignupStatus object for the tenant. |
-|[signUp](../api/privilegedsignupstatus_signUp.md) | [privilegedSignupStatus](privilegedsignupstatus.md) |Sign up the tenant to Privileged Identity Management.|
+|[signUp](../api/privilegedsignupstatus_signup.md) | [privilegedSignupStatus](privilegedsignupstatus.md) |Sign up the tenant to Privileged Identity Management.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
