@@ -35,8 +35,7 @@ Content-type: application/json
 Content-length: 717
 
 {
-  "application": {
-    "addIns": [
+  "addIns": [
       {
         "id": "id-value",
         "type": "type-value",
@@ -48,7 +47,6 @@ Content-length: 717
         ]
       }
     ],
-    "appId": "appId-value",
     "appRoles": [
       {
         "allowedMemberTypes": [
@@ -65,7 +63,6 @@ Content-length: 717
     "availableToOtherOrganizations": true,
     "displayName": "displayName-value",
     "errorUrl": "errorUrl-value"
-  }
 }
 ```
 In the request body, supply a JSON representation of [application](../resources/application.md) object.
