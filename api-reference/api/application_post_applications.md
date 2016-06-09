@@ -25,10 +25,7 @@ If successful, this method returns `201, Created` response code and [application
 ### Example
 ##### Request
 Here is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "create_application_from_applications"
-}-->
+<!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/applications
 Content-type: application/json
@@ -68,11 +65,7 @@ Content-length: 717
 In the request body, supply a JSON representation of [application](../resources/application.md) object.
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.application"
-} -->
+<!-- { "blockType": "ignored" } -->
 ```http
 Content-type: application/json
 Content-length: 717
