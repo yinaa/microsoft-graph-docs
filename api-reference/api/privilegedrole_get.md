@@ -1,51 +1,54 @@
-# Get inferenceClassification
+# Get privilegedRole
 
-Retrieve the properties and relationships of inferenceclassification object.
+Retrieve the properties and relationships of privilegedrole object.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
+
+The requestor needs to have one of the following roles: _Privileged Role Administrator_, _Global Administrator_, _Security Administrator_, or _Security Reader_.
+ 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/<id | userPrincipalName>/inferenceClassification
-GET /drive/root/createdByUser/inferenceClassification
-GET /drive/root/lastModifiedByUser/inferenceClassification
+GET /privilegedRoles/<id>
+GET /privilegedRoleAssignments/<id>/roleInfo
 ```
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
 ### Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Name      |Description|
+|:----------|:----------|
+| Authorization  | Bearer <code>|
 
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and [inferenceClassification](../resources/inferenceclassification.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [privilegedRole](../resources/privilegedrole.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_inferenceclassification"
+  "name": "get_privilegedrole"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/inferenceClassification
+GET https://graph.microsoft.com/beta/privilegedRoles/<id>
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.inferenceclassification"
+  "@odata.type": "microsoft.graph.privilegedRole"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 22
+Content-length: 46
 
 {
-  "id": "id-value"
+  "id": "id-value",
+  "name": "name-value"
 }
 ```
 
@@ -53,7 +56,7 @@ Content-length: 22
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get inferenceClassification",
+  "description": "Get privilegedRole",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

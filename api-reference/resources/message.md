@@ -68,7 +68,7 @@ Here is a JSON representation of the resource
 |hasAttachments|Boolean|Indicates whether the message has attachments.|
 |id|String||
 |importance|String| The importance of the message: `Low`, `Normal`, `High`.|
-|inferenceClassification|String| Possible values are: `Focused`, `Other`.|
+|inferenceClassification|String| The classification of the message for the user, based on inferred relevance or importance, or on an explicit override. Possible values are: `focused`, `other`.|
 |isDeliveryReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |isDraft|Boolean|Indicates whether the message is a draft. A message is a draft if it hasn't been sent yet.|
 |isRead|Boolean|Indicates whether the message has been read.|

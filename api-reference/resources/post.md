@@ -3,6 +3,7 @@
 Represents an individual Post item within a [converstaionThread](conversationthread.md) entity.
 
 A new post is created when you:
+
 - [Reply to an existing post](../api/post_reply.md) 
 - [Reply to an existing thread](../api/conversationthread_reply.md) 
 - [Create a thread in a new conversation](../api/group_post_threads.md)
@@ -62,9 +63,12 @@ Here is a JSON representation of the resource
 ### Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|attachments|[Attachment](attachment.md) collection| Read-only. Nullable.|
-|extensions|[Extension](extension.md) collection| Read-only. Nullable.|
-|inReplyTo|[Post](post.md)| Read-only.|
+|attachments|[Attachment](attachment.md) collection|The collection of [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md), and [referenceAttachment](referenceAttachment.md) attachments for the post. Read-only. Nullable.|
+|extensions|[Extension](extension.md) collection|The collection of open type data extensions defined for the post. Read-only. Nullable.|
+|inReplyTo|[Post](post.md)|The earlier post that this post is replying to in the [conversationThread](conversationthread.md). Read-only.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the post. Read-only. Nullable.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the post. Read-only. Nullable.|
+
 
 ### Methods
 
@@ -76,8 +80,8 @@ Here is a JSON representation of the resource
 |[Forward](../api/post_forward.md)|None|Forward a post to a recipient.|
 |[List attachments](../api/post_list_attachments.md) |[attachment](attachment.md) collection| Get a list of Attachment objects attached to a post.|
 |[Create Attachment](../api/post_post_attachments.md) |[attachment](attachment.md)| Add an attachment to a post. |
-|[Create openTypeExtension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open type data extension and add custom properties in a new or existing instance of a resource.|
-|[Get openTypeExtension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an **openTypeExtension** object or objects identified by name or fully qualified name.|
+|[Create data extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open type data extension and add custom properties in a new or existing instance of a resource.|
+|[Get data extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an **openTypeExtension** object or objects identified by name or fully qualified name.|
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -1,20 +1,20 @@
-# Delete inferenceClassification
+# Delete privilegedRoleAssignment
 
-Delete inferenceClassification.
+Delete privilegedRoleAssignment.
 ### Prerequisites
-The following **scopes** are required to execute this API: 
+The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
+
+The requestor needs to have _Privileged Role Administrator_ role.
+ 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /users/<id | userPrincipalName>/inferenceClassification
-DELETE /drive/root/createdByUser/inferenceClassification
-DELETE /drive/root/lastModifiedByUser/inferenceClassification
-
+DELETE /privilegedRoleAssignments/<id>
 ```
 ### Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer <token>. Required. |
+| Name       | Description|
+|:---------------|:----------|
+| Authorization  | Bearer <code>|
 
 ### Request body
 Do not supply a request body for this method.
@@ -28,13 +28,13 @@ If successful, this method returns `204, No Content` response code. It does not 
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_inferenceclassification"
+  "name": "delete_privilegedroleassignment"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/inferenceClassification
+DELETE https://graph.microsoft.com/beta/privilegedRoleAssignments/<id>
 ```
 ##### Response
-Here is an example of the response. 
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -47,7 +47,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete inferenceClassification",
+  "description": "Delete privilegedRoleAssignment",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
