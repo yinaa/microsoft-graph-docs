@@ -12,15 +12,14 @@ Represents a privileged role assignment for a particular user.
 |[Create assignment](../api/privilegedroleassignment_post_privilegedroleassignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)| Create a new assignment by posting to the assignments collection.|
 |[Delete](../api/privilegedroleassignment_delete.md) | None |Delete privilegedRoleAssignment object. |
 |[makePermanent](../api/privilegedroleassignment_makepermanent.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Make the role assignment as permanent.|
-|[makeTemporary](../api/privilegedroleassignment_maketemporary.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Make the role assignement as temporary.|
+|[makeEligible](../api/privilegedroleassignment_makeeligible.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Make the role assignment as eligible.|
 |[my](../api/privilegedroleassignment_my.md)|[privilegedRoleAssignment](privilegedroleassignment.md) collection|Get the current user's privileged role assignments.|
-|[uniqueAdminsCount](../api/privilegedroleassignment_uniqueadminscount.md)|int32|Get the number of administrators that have the privileged role assignments.|
 
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |expirationDateTime|dateTimeOffset|The UTC DateTime when the temporary privileged role assignment will be expired. For permanent role assignment, the value is null.|
-|id|string| The unique identifier for the privileged role assignment. Read-only. It is in the format of 'userId_roleId'.|
+|id|string| The unique identifier for the privileged role assignment. Read-only. It is in the format of 'userId_roleId', where userId is the GUID string for Azure AD user id, and roleId is the GUID string for Azure administrator role id.|
 |isElevated|boolean|**true** if the role assignment is activated. **false** if the role assignment is deactivated.|
 |resultMessage|string|Result message set by the service.|
 |roleId|string|Role identifier. In GUID string format.|

@@ -11,6 +11,8 @@ The requestor can only call ```selfActivate``` for the role that is assigned to 
 ```http
 POST /privilegedRoles/<id>/selfActivate
 ```
+
+Note that ``<id>`` is the target role id.
 ### Request headers
 | Name       | Description|
 |:---------------|:----------|

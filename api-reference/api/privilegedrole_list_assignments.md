@@ -1,6 +1,6 @@
 # List assignments
 
-Retrieve a list of privilegedRoleAssignment objects that are associated with the role.
+Retrieve a list of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) objects that are associated with the role. Each [privilegedRoleAssignment](../resources/privilegedroleassignment.md) represents a role assignment to a user.
 ### Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
 
@@ -11,6 +11,8 @@ The requestor needs to have one of the following roles: _Privileged Role Adminis
 ```http
 GET /privilegedRoles/<id>/assignments
 ```
+
+Note that ``<id>`` is the target role id.
 ### Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 

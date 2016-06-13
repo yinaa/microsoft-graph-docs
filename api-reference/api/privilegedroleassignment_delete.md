@@ -1,6 +1,6 @@
 # Delete privilegedRoleAssignment
 
-Delete privilegedRoleAssignment.
+Delete [privilegedRoleAssignment](privilegedroleassignment.md).
 ### Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
 
@@ -11,6 +11,9 @@ The requestor needs to have _Privileged Role Administrator_ role.
 ```http
 DELETE /privilegedRoleAssignments/<id>
 ```
+
+Note that ``<id>`` is in the format of 'userId_roleId', where userId is the GUID string for Azure AD user id, and roleId is the GUID string for Azure administrator role id.
+
 ### Request headers
 | Name       | Description|
 |:---------------|:----------|

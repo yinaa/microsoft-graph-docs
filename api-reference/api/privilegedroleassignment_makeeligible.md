@@ -1,5 +1,5 @@
-# privilegedRoleAssignment: makeTemporary
-Make the permanent role assignment as temporary. The role will be set as active with the default expiration time.
+# privilegedRoleAssignment: makeEligible
+Make the role assignment as eligible. If the role assignment is already eligible before the call, it does nothing. If the role assignment is permanent and the requestor is different from the target user, the role assignment will become eligible and the role will be deactivated for the target user. If the requestor is the target user and the role is Security Administrator or Privileged Role Administrator, the role will be activated with the default expiration.
 
 ### Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
@@ -9,7 +9,7 @@ The requestor needs to have _Privileged Role Administrator_ role.
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /privilegedRoleAssignments/<id>/makeTemporary
+POST /privilegedRoleAssignments/<id>/makeEligible
 ```
 ### Request headers
 | Name       | Description|
@@ -27,10 +27,10 @@ Here is an example of how to call this API.
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "privilegedroleassignment_maketemporary"
+  "name": "privilegedroleassignment_makeeligible"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/privilegedRoleAssignments/<id>/makeTemporary
+POST https://graph.microsoft.com/beta/privilegedRoleAssignments/<id>/makeEligible
 ```
 
 ##### Response
@@ -59,7 +59,7 @@ Content-length: 184
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "privilegedRoleAssignment: makeTemporary",
+  "description": "privilegedRoleAssignment: makeEligible",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
