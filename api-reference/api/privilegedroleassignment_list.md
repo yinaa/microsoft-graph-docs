@@ -1,6 +1,6 @@
 # List privilegedRoleAssignments
 
-Retrieve a list of [privilegedRoleAssignment](privilegedroleassignment.md) objects, which correspond to all role assignments for the organization.
+Retrieve a list of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) objects, which correspond to all role assignments for the organization.
 ### Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
 

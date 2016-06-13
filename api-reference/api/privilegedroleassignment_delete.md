@@ -1,6 +1,6 @@
 # Delete privilegedRoleAssignment
 
-Delete [privilegedRoleAssignment](privilegedroleassignment.md).
+Delete [privilegedRoleAssignment](../resources/privilegedroleassignment.md).
 ### Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
 

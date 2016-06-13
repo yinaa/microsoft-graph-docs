@@ -8,7 +8,6 @@ Represents the settings for a privileged role.
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get privilegedRoleSettings](../api/privilegedrolesettings_get.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Read properties and relationships of privilegedRoleSettings object.|
-|[Update](../api/privilegedrolesettings_update.md) | [privilegedRoleSettings](privilegedrolesettings.md)	|Update privilegedRoleSettings object. |
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
