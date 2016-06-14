@@ -55,7 +55,7 @@ Content-length: 260
   "riskEventStatus": "remediated", 
   "riskLevel": "medium", 
   "riskType": "ImpossibleTravelRiskEvent",
-  "userAgent": "Firefox"
+  "userAgent": "Firefox",
   "userDisplayName": "Jon Doe", 
   "userId": "0bfdc7a8-6a16-c33e-7de9-a60a28ae533b", 
   "userPrincipalName": "jon@contoso.com"
