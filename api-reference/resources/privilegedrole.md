@@ -1,6 +1,6 @@
 # privilegedRole resource type
 
-Represents an Azure AD organizational role, such as: **Global Administrator, Billing Administrator, Service Administrator, User Administrator, Password Administrator**, etc.
+Represents an Azure AD administrator role, such as: **Global Administrator, Billing Administrator, Service Administrator, User Administrator, Password Administrator**, etc.
 
 
 ### Methods
@@ -16,7 +16,7 @@ Represents an Azure AD organizational role, such as: **Global Administrator, Bil
 ### Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|string|The unique identifier for role. Read-only.|
+|id|string|The unique identifier for administrator role. It is a GUID string and has the same value as the role template id from Azure AD for the given role. Read-only.|
 |name|string|Role name.|
 
 ### Relationships

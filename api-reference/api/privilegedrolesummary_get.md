@@ -1,6 +1,6 @@
 # Get privilegedRoleSummary
 
-Retrieve the properties and relationships of privilegedRoleSummary object.
+Retrieve the properties and relationships of [privilegedRoleSummary](../resources/privilegedrolesummary.md) object.
 ### Prerequisites
 The following **scopes** are required to execute this API: 
 ### HTTP request

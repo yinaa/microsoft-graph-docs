@@ -1,6 +1,6 @@
 # Get privilegedRoleSettings
 
-Retrieve the properties and relationships of privilegedRoleSettings object.
+Retrieve the role settings for the given role. A [privilegedRoleSettings](../resources/privilegedrolesettings.md) object will be returned.
 ### Prerequisites
 
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_

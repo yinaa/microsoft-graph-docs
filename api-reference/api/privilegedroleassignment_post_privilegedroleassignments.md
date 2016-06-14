@@ -1,6 +1,6 @@
 # Create privilegedRoleAssignment
 
-Use this API to create a new privilegedRoleAssignment.
+Use this API to create a new  [privilegedRoleAssignment](../resources/privilegedroleassignment.md).
 ### Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
 

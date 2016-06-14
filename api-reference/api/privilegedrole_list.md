@@ -1,6 +1,8 @@
 # List privilegedRoles
 
-Retrieve a list of privilegedRole objects.
+Retrieve a list of [privilegedRole](../resources/privilegedrole.md) objects.
+
+To filter the results from the query, use the standard OData ``$filter`` expressions in the URIs.
 ### Prerequisites
 The following **scopes** are required to execute this API: _Directory.AccessAsUser.All_
 
