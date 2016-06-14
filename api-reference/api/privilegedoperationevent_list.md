@@ -29,10 +29,7 @@ If successful, this method returns a `200 OK` response code and collection of [p
 ### Example
 ##### Request 1
 Here is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "get_privilegedoperationevents"
-}-->
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents
 ```
@@ -65,10 +62,7 @@ Content-length: 227
 
 ##### Request 2
 Here is an example of the request using $filter to get the audit events that have ``requestType`` as ``Elevate``.
-<!-- {
-  "blockType": "request",
-  "name": "get_privilegedoperationevents"
-}-->
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType eq 'Elevate'
 ```
