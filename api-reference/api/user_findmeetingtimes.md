@@ -71,7 +71,6 @@ Here is the example request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/findMeetingTimes
-Content-type: application/json
 
 
 { 
@@ -118,8 +117,8 @@ Here is an example response. Note: The response object shown here may be truncat
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.meetingTimeCandidate",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.meetingTimeCandidatesResult",
+  "isCollection": false
 } -->
 ```http
 HTTP/1.1 200 OK
