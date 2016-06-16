@@ -8,7 +8,7 @@ The following are the possible reasons that [findMeetingTimes](../api/user_findm
 |:-----|:-----|
 | attendeesUnavailable | All of the attendees' availability is known, but not enough attendees are available to reach the meeting confidence threshold, which is 50% by default, for any time period. This threshold is based on the attendees' free/busy status for a suggested meeting time period, with an attendee's free status corresponding to 100% chance of attendance, unknown status 50%, and busy status 0%.|
 | attendeesUnavailableOrUnknown | Some or all of the attendees have unknown availability, causing the meeting confidence to fall below the set threshold, which is 50% by default. Attendee availability can become unknown if the attendee is outside of the organization, or there is an error obtaining free/busy information.|
-| locationsUnavailable | The **isRequired** property of the [locationConstraint](#LocationConstraint) parameter is specified as mandatory, and yet there are no locations available at the calculated time slots. |
+| locationsUnavailable | The **isRequired** property of the [locationConstraint](locationconstraint.md) parameter is specified as mandatory, and yet there are no locations available at the calculated time slots. |
 | organizerUnavailable | The **isOrganizerOptional** parameter is false and yet the organizer is not available during the requested time window. |
 | unknown | The reason for not returning any meeting suggestions is not known.|
 

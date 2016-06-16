@@ -38,7 +38,7 @@ calculates the best possible meeting times, and returns any meeting suggestions.
 |:---------------|:--------|:----------|
 |attendees|[attendeeBase](../resources/attendeebase.md) collection|A collection of attendees or resources for the meeting. An empty collection causes **findMeetingTimes** to look for free time slots for only the organizer.|
 |locationConstraint|[locationConstraint](../resources/locationconstraint.md)|The organizer's requirements about the meeting location, such as whether a suggestion for a meeting location is required, or there are specific locations only where the meeting can take place.|
-|timeConstraint|[timeConstraint](resources/timeconstraint.md)|The start and end time range in which the meeting should occur.|
+|timeConstraint|[timeConstraint](../resources/timeconstraint.md)|The start and end time range in which the meeting should occur.|
 |meetingDuration|Edm.Duration|The length of the meeting, denoted in [ISO8601](http://www.iso.org/iso/iso8601) format. For example, 1 hour is denoted as 'PT1H', where 'P' is the duration designator, 'T' is the time designator, 'H' is the hour designator. If no meeting duration is specified, **findMeetingTimes** uses the default of 30 minutes. |
 |maxCandidates|Edm.Int32|The maximum number of meeting time suggestions to be returned.|
 |isOrganizerOptional|Edm.Boolean|`True` if the organizer's attendance is not necessary, `false` otherwise.|
