@@ -23,7 +23,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.identityinfo"
+  "@odata.type": "microsoft.graph.identityInfo"
 }-->
 
 ```json
