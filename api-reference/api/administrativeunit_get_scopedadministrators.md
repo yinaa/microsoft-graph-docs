@@ -20,13 +20,13 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 ### Request body
 Do not supply a request body for this method.
 ### Response
-If successful, this method returns a `200 OK` response code and collection of [scopedRoleMembership](../resources/scopedrolemembership.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and the requested [scopedRoleMembership](../resources/scopedrolemembership.md) object in the response body.
 ### Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_scopedadministrators"
+  "name": "get_scopedadministrator"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/administrativeUnits/<id>/scopedAdministrators/<id>
@@ -36,8 +36,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.scopedrolemembership",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.scopedrolemembership"
 } -->
 ```http
 HTTP/1.1 200 OK
