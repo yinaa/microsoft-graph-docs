@@ -8,7 +8,7 @@ Represents a web site.
 |:---------------|:--------|:----------|
 |type|String| Possible values are: `other`, `home`, `work`, `blog`, `profile`.|
 |address|string|The URL of the website.|
-|name|string|The display name of the web site.|
+|displayName|string|The display name of the web site.|
 
 ### JSON representation
 
@@ -26,7 +26,7 @@ Here is a JSON representation of the resource.
 {
   "type": "String",
   "address": "string",
-  "name": "string"
+  "displayName": "string"
 }
 
 ```
