@@ -700,9 +700,8 @@ Response
 ```http
 HTTP code: 200, OK 
 content-type: application/json;odata.metadat 
-
+```
 [top](#excel-rest-api)
-
 
 ### Range operations
 
@@ -985,7 +984,7 @@ The following is not valid either as null is not a valid color value.
 
 ```json
 {
- "color" =  null
+ "color" :  null
 }
 ```
 
@@ -1026,7 +1025,7 @@ For read operations, expect to receive blank values if the contents of the cells
 
 ```json
 {
-  "formula" = [["", "", "=Rand()"]]
+  "formula" : [["", "", "=Rand()"]]
 }
 ```
 [top](#excel-rest-api)
@@ -1052,7 +1051,7 @@ Example: The following is not a valid update request because the requested range
 PATCH /workbook/worksheets('Sheet1')/Range(address="A:B")
 
 {
-  "values" = 'Due Date'
+  "values" : 'Due Date'
 }
 ```
 
@@ -1080,7 +1079,7 @@ The following request updates the selected range with the text of "Sample text".
 PATCH /workbook/worksheets('Sheet1')/Range(address="A1:B00")
 
 {
-  "values" = 'Sample text'
+  "values" : 'Sample text'
 }
 ```
 
