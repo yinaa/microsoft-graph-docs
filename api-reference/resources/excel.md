@@ -32,8 +32,8 @@ Following sections provide important programming details related to Excel REST A
 
 ### Authorization and scopes
 
-The standard OAuth2 based authorization used across mechanism applies to Excel APIs. All APIs require the `Authorization: Bearer {access-tken}` HTTP header.   
-Please refer to the autorization section of the docs to learn more.  
+The standard OAuth2 based authorization used across mechanism applies to Excel APIs. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
+Please refer to the authorization section of the docs to learn more.  
   
 
 ##### Scopes
@@ -54,12 +54,12 @@ A set of Excel objects (such as Table, Range, Chart, etc.) could be accessed usi
 `https://graph.microsoft.com/{ver}/me/drive/items/{id}/workbook/`  
 returns a collection of worksheet objects part of the workbook.    
 
-### Excel Session and persistance
+#### Excel Session and persistence
 
 Excel APIs can be called in one of two modes: 
 
 1. Persistent session: In this mode, all changes made to the workbook are persisted (saved). This is the usual mode of operation. 
-2. Non-persistent session: In this mode, changes made by the API are not saved to the source location. Instad, Excel backend server keeps a temporary copy of the file that reflects the changes made during that particualr API session. Once the excel session expires, the changes are lost. This mode is useful to apps that may need to do analysis or obtain result of calculatio or a chart image, etc.; at the same time not impact the document state itself.   
+2. Non-persistent session: In this mode, changes made by the API are not saved to the source location. Instead, Excel backend server keeps a temporary copy of the file that reflects the changes made during that particular API session. Once the excel session expires, the changes are lost. This mode is useful to apps that may need to do analysis or obtain result of calculation or a chart image, etc.; at the same time not impact the document state itself.   
 
 Session is represented in the API using `workbook-session-id: {session-id}` header. 
 
