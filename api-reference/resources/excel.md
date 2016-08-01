@@ -43,7 +43,7 @@ One of the following scopes is required to execute Excel API:
 * Files.ReadWrite
 
 
-#### The Basics
+### The Basics
 
 Excel REST APIs allow web and mobile applications to read and modify workbook stored on the supported storage platforms (OneDrive, SharePoint, etc.). `Workbook` (or Excel file) is the top level object, which consists of all other Excel objects through relationships. A workbook is addressed through drive API by identifying the location of the file in the URL. Example:
 
@@ -1051,7 +1051,7 @@ Example: The following is not a valid update request because the requested range
 PATCH /workbook/worksheets('Sheet1')/Range(address="A:B")
 
 {
-  "values" : 'Due Date'
+  "values" : "Due Date"
 }
 ```
 
@@ -1079,7 +1079,7 @@ The following request updates the selected range with the text of "Sample text".
 PATCH /workbook/worksheets('Sheet1')/Range(address="A1:B00")
 
 {
-  "values" : 'Sample text'
+  "values" : "Sample text"
 }
 ```
 
