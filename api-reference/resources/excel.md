@@ -71,6 +71,7 @@ _Is the session header required?_ No. Session header is not required for an Exce
 
 Pass a JSON object by setting the `persistchanges` value to `true` or `false`. 
 
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /{ver}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/CreateSession
 content-type: Application/Json 
@@ -84,6 +85,7 @@ When the value of `persistChanges` is set to `false`, a non-persistant session i
 
 ##### Response
 
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201, Created
 content-type: application/json;odata.metadat 
@@ -100,6 +102,7 @@ content-type: application/json;odata.metadat
 Session Id returned from the previous call is passed as a header on subsequent API requests in  
 `workbook-session-id` HTTP header. 
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /{ver}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/Worksheets
 authorization: Bearer {access-token} 
@@ -112,6 +115,7 @@ workbook-session-id: {session-id}
 #### List worksheets part of the workbook 
 Request 
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /{ver}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/Worksheets
 accept: Application/Json 
@@ -121,6 +125,7 @@ workbook-session-id: {session-id}
 
 Response
  
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK
 content-type: application/json;odata.metadat 
@@ -147,6 +152,7 @@ content-type: application/json;odata.metadat
 ```
 #### Add a new worksheet 
  
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /{ver}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/Worksheets
 content-type: Application/Json 
@@ -157,6 +163,7 @@ workbook-session-id: {session-id}
 ```
 
 Response 
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201, Created
 content-type: application/json;odata.metadat 
@@ -177,9 +184,12 @@ Request
 ```
 DELETE /{ver}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/Worksheets('%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D')
 content-type: Application/Json 
+authorization: Bearer {access-token} 
+workbook-session-id: {session-id}
 ```
 
 Response
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204, No Content
 ```
@@ -201,6 +211,7 @@ workbook-session-id: {session-id}
 
 Response
  
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK
 content-type: application/json;odata.metadat 
@@ -221,6 +232,7 @@ content-type: application/json;odata.metadat
 #### List charts that are part of the worksheet 
 
 Request
+<!-- { "blockType": "ignored" } -->
 ```http 
 GET /{ver}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/Worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/Charts
 accept: Application/Json 
@@ -229,6 +241,7 @@ workbook-session-id: {session-id}
 ```
 
 Response
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK
 content-type: application/json;odata.metadat 
@@ -252,6 +265,7 @@ content-type: application/json;odata.metadat
 #### Get chart image
 
 Request 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /{ver}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/Worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/Charts('%7B00000000-0008-0000-0100-000003000000%7D')/Image(width=0,height=0,fittingMode='fit')
 authorization: Bearer {access-token} 
@@ -259,6 +273,7 @@ workbook-session-id: {session-id}
 ```
 
 Response
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK
 content-type: application/json;odata.metadat 
@@ -273,6 +288,7 @@ content-type: application/json;odata.metadat
 
 Request
 
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /{ver}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/Worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/Charts/Add
 content-type: Application/Json 
@@ -283,6 +299,7 @@ authorization: Bearer {access-token}
 ```
 
 Response 
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201, Created
 content-type: application/json;odata.metadat 
@@ -302,7 +319,8 @@ content-type: application/json;odata.metadat
 
 #### Update a chart
 
-````http 
+`<!-- { "blockType": "ignored" } -->
+```http 
 PATCH /{ver}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/Worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/Charts('%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D')
 content-type: Application/Json 
 authorization: Bearer {access-token} 
@@ -313,6 +331,7 @@ workbook-session-id: {session-id}
 ```
 Response 
 
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK
 content-type: application/json;odata.metadat 
@@ -332,6 +351,7 @@ content-type: application/json;odata.metadat
 #### Update chart source data 
 
 Request
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /{ver}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/Worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/Charts('%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D')/setData
 content-type: Application/Json 
@@ -343,6 +363,7 @@ workbook-session-id: {session-id}
 ```
 
 Response
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204, No Content
 ```
@@ -352,6 +373,7 @@ HTTP code: 204, No Content
 #### Get list of tables 
 
 Request 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /{ver}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/Worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/Tables
 accept: Application/Json 
@@ -360,6 +382,7 @@ workbook-session-id: {session-id}
 ```
 
 Response
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK
 content-type: application/json;odata.metadat 
@@ -368,6 +391,7 @@ content-type: application/json;odata.metadat
 #### Update table
 
 Request 
+<!-- { "blockType": "ignored" } -->
 ```http 
 PATCH /beta/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/Tables('2')
 content-type: Application/Json 
@@ -378,6 +402,7 @@ workbook-session-id: {session-id}
 ```
 
 Response 
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK
 content-type: application/json;odata.metadat 
@@ -396,6 +421,7 @@ content-type: application/json;odata.metadat
 #### Get list of table rows
 Request 
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /{ver}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/Tables('4')/Rows
 authorization: Bearer {access-token} 
@@ -404,6 +430,7 @@ workbook-session-id: {session-id}
 
 Response
 
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK
 content-type: application/json;odata.metadat 
@@ -484,6 +511,7 @@ content-type: application/json;odata.metadat
 ### Get list of table columns
 
 Request
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /{ver}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/Tables('4')/Columns
 authorization: Bearer {access-token} 
@@ -492,6 +520,7 @@ workbook-session-id: {session-id}
 
 Response 
 
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK 
 content-type: application/json;odata.metadat 
@@ -594,6 +623,7 @@ content-type: application/json;odata.metadat
 #### Add a table row
 
 Request
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /beta/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/Tables('4')/Rows
 content-type: Application/Json 
@@ -604,6 +634,7 @@ workbook-session-id: {session-id}
 ```
 
 Response 
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201, Created
 content-type: application/json;odata.metadat 
@@ -624,6 +655,7 @@ content-type: application/json;odata.metadat
 #### Add a table column 
 
 Request 
+<!-- { "blockType": "ignored" } -->
 ```http 
 POST /beta/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/Tables('2')/Columns
 content-type: Application/Json 
@@ -635,6 +667,7 @@ accept: application/Json
 
 Response 
 
+<!-- { "blockType": "ignored" } -->
 ```http 
 HTTP code: 201, Created
 content-type: application/json;odata.metadat 
@@ -662,6 +695,7 @@ content-type: application/json;odata.metadat
 #### Delete table row
 
 Request 
+<!-- { "blockType": "ignored" } -->
 ```http  
 DELETE /beta/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/Tables('4')/Rows/$/ItemAt(index=6)
 authorization: Bearer {access-token} 
@@ -669,12 +703,14 @@ workbook-session-id: {session-id}
 ```
 
 Response 
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204, No Content
 ```
 
 #### delete table column 
 Request
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /beta/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/Tables('4')/Columns('3')
 authorization: Bearer {access-token} 
@@ -682,6 +718,7 @@ workbook-session-id: {session-id}
 ```
 
 Response 
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204, No Content
 ```
@@ -690,6 +727,7 @@ HTTP code: 204, No Content
 
 #### convert table to range 
 Request
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /beta/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/Tables('1')/convertToRange
 authorization: Bearer {access-token} 
@@ -697,6 +735,7 @@ workbook-session-id: {session-id}
 ```
 
 Response
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK 
 content-type: application/json;odata.metadat 
@@ -708,6 +747,7 @@ content-type: application/json;odata.metadat
 #### Get Range 
 
 Request
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /beta/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/Worksheets('test')/Range(address='A1:B2')
 authorization: Bearer {access-token} 
@@ -716,6 +756,7 @@ workbook-session-id: {session-id}
 
 Response 
 
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK
 content-type: application/json;odata.metadat 
@@ -809,6 +850,7 @@ content-type: application/json;odata.metadat
 
 #### Range update 
 
+<!-- { "blockType": "ignored" } -->
 ```http
 PATCH /beta/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/Worksheets('test')/Range(address='test!A1:B2')
 authorization: Bearer {access-token} 
@@ -817,6 +859,7 @@ workbook-session-id: {session-id}
 { "values": [ [ "Test", "Value" ], [ "For", "Update" ] ] }
 ```
 
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200, OK
 content-type: application/json;odata.metadat
@@ -912,6 +955,7 @@ content-type: application/json;odata.metadat
 ### Named items
 Request
  
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /beta/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/names
 authorization: Bearer {access-token} 
@@ -920,6 +964,7 @@ workbook-session-id: {session-id}
 
 Response 
 
+<!-- { "blockType": "ignored" } -->
 ```http 
 HTTP code: 200, OK
 content-type: application/json
@@ -1047,6 +1092,7 @@ Setting cell level properties (such as values, numberFormat, etc.) on unbounded 
 
 Example: The following is not a valid update request because the requested range is unbounded.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/worksheets('Sheet1')/Range(address="A:B")
 
@@ -1075,6 +1121,7 @@ The API will look for a *single cell value* and, if the target range dimension d
 
 The following request updates the selected range with the text of "Sample text". Note that Range has 200 cells, whereas the provided input only has 1 cell value.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/worksheets('Sheet1')/Range(address="A1:B00")
 
@@ -1088,6 +1135,7 @@ PATCH /workbook/worksheets('Sheet1')/Range(address="A1:B00")
 Errors are returned with HTTP error code along with an error object. An error `code` and `message` are returned that provides explaination of the reason. 
 An example is shown below:
 
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 400 Bad Request
 Content-Type: application/json
