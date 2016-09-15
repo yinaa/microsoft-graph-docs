@@ -3,25 +3,32 @@
 
 # Overview of Microsoft Graph
 
-Microsoft Graph (previously called Office 365 unified API) exposes multiple APIs from Microsoft cloud services through a single REST API endpoint (**https://graph.microsoft.com**). Using the Microsoft Graph, you can turn formerly difficult or complex queries into simple navigations. 
+Microsoft Graph exposes multiple APIs from Microsoft cloud services through a single REST API endpoint: **https://graph.microsoft.com**. This simplifies the queries you use to access resources. 
  
-The Microsoft Graph gives you:
+You can use Microsoft Graph to:
 
-- A unified API endpoint for accessing aggregated data from multiple Microsoft cloud services in a single response 
-- Seamless navigation between entities and the relationships among them 
-- Access to intelligence and insights coming from the Microsoft cloud
+- Access data from multiple Microsoft cloud services in a single response.
+- Navigate between entities and relationships powered by the Office Graph (for commercial users).
+- Access intelligence and insights from the Microsoft cloud.
 
-And all this using a single authentication token.
+**Microsoft Graph developer stack**
 
-You can use the API to access fixed entities like users, groups, mail, messages, calendars, tasks, and notes coming from services like Outlook, OneDrive, Azure Active Directory, Planner, OneNote and others. You can also obtain calculated relationships powered by the Office Graph (only for commercial users) like the list of users you are working with or the documents trending around you.
+![Microsoft Graph API developer stack.](./images/MicrosoftGraph_DevStack.png)
 
-Microsoft Graph exposes two endpoints. A generally available endpoint /v1.0 and a preview endpoint /beta.  You can use /v1.0 in your production applications but not /beta.  The preview endpoint /beta is where we offer the latest features for developer to experiment and provide feedback, APIs in beta might change at any point and are not ready for production use.
+With Microsoft Graph, you can:
+
+- Use any development environment you choose.
+- Use any  programming language, development platform, and hosting environment.
+- Build an  app that accesses the Microsoft Graph API using any web language.  
+- Use the IDE of your choice.
+- Host your apps in Microsoft Azure or any cloud platform.
+- Develop apps for a variety of device platform.
+- Call the Microsoft Graph API from Office or SharePoint add-ins.
 
 <!--<a name="msg_queries"> </a>-->
 
-##Common Queries
+##Common Microsoft Graph queries
 
-The following are some examples of common queries using Microsoft Graph API:
 
 | **Operation**	| **Service endpoint** |
 |:--------------------------|:----------------------------------------|
@@ -44,11 +51,12 @@ The following are some examples of common queries using Microsoft Graph API:
 
 <!-- <a name="msg_roof"> </a> -->
 
-## All Office 365 data under one roof
+##Next steps
 
-The following diagram shows the Microsoft Graph developer stack and how it works.
-
-![Microsoft Graph API developer stack.](./images/MicrosoftGraph_DevStack.png)
+- Learn more about how to [authenticate]() your Microsoft Graph app.
+- [Get started]() using Microsoft Graph and the platform of your choice.
+- Discover the [resources and operations]() that you can use in your production environment.
+- Explore the [beta APIs]() that are currently in preview.
 
  >  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph). Tag your questions with [MicrosoftGraph] and [office365].
 
