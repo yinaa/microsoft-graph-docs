@@ -22,7 +22,7 @@ With Microsoft Graph, you can:
 - Build an  app that accesses the Microsoft Graph API using any web language.  
 - Use the IDE of your choice.
 - Host your apps in Microsoft Azure or any cloud platform.
-- Develop apps for a variety of device platform.
+- Develop apps for a variety of device platforms.
 - Call the Microsoft Graph API from Office or SharePoint add-ins.
 
 <!--<a name="msg_queries"> </a>-->
@@ -51,12 +51,13 @@ With Microsoft Graph, you can:
 
 <!-- <a name="msg_roof"> </a> -->
 
-##Next steps
+##Explore Microsoft Graph
 
 - Learn more about how to [authenticate]() your Microsoft Graph app.
 - [Get started]() using Microsoft Graph and the platform of your choice.
 - Discover the [resources and operations]() that you can use in your production environment.
-- Explore the [beta APIs]() that are currently in preview.
+- Preview the new [beta APIs]().
+- Visit the [Microsoft Graph Explorer]().
 
  >  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph). Tag your questions with [MicrosoftGraph] and [office365].
 
