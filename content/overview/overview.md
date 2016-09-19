@@ -49,7 +49,7 @@ With Microsoft Graph, you can:
 |   GET my tasks	| `https://graph.microsoft.com/beta/me/tasks` |
 |   GET my notes |	`https://graph.microsoft.com/beta/me/notes/notebooks` |
 
->**Note:** The APIs in the beta endpoint are subject to change. Do not use them in your production environment. 
+>**Note:** The APIs in the beta endpoint are subject to change. We don't recommend that you use them in your production apps. 
 
 <!-- <a name="msg_roof"> </a> -->
 
