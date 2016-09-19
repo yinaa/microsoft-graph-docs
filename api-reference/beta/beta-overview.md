@@ -20,5 +20,5 @@ For details, see [Calling the Microsoft Graph API](./content/call_api.md).
 ##See also
 - [Overview of Microsoft Graph](./content/overview.md)
 - [Microsoft Graph explorer](https://graph.microsoft.io/en-us/graph-explorer)
-- [Microsoft Graph Quick Start](https://graph.microsoft.io/en-us/getting-started)
+- [Microsoft Graph quick start](https://graph.microsoft.io/en-us/getting-started)
 
