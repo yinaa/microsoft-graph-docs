@@ -54,10 +54,10 @@ With Microsoft Graph, you can:
 ##Explore Microsoft Graph
 
 - Learn more about how to [authenticate]() your Microsoft Graph app.
-- [Get started]() using Microsoft Graph and the platform of your choice.
+- [Get started](get-started/get-started.md) using Microsoft Graph and the platform of your choice.
 - Discover the resources and operations that you can use in your production environment by browsing the TOC.
 - Preview the new [beta APIs]().
-- Visit the [Microsoft Graph Explorer]().
+- Visit the [Microsoft Graph Explorer](https://graph.microsoft.io/en-us/graph-explorer).
 
  >  Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph). Tag your questions with [MicrosoftGraph] and [office365].
 
