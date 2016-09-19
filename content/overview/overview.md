@@ -55,7 +55,7 @@ With Microsoft Graph, you can:
 
 - Learn more about how to [authenticate]() your Microsoft Graph app.
 - [Get started]() using Microsoft Graph and the platform of your choice.
-- Discover the [resources and operations]() that you can use in your production environment.
+- Discover the resources and operations that you can use in your production environment by browsing the TOC.
 - Preview the new [beta APIs]().
 - Visit the [Microsoft Graph Explorer]().
 
